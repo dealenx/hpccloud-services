@@ -32,7 +32,7 @@ COPY ./docker/celery/config.json /cumulus/cumulus/conf/config.json
 
 RUN chown -R celery  /cumulus
 
-RUN git clone https://github.com/Kitware/HPCCloud.git /hpccloud && \
+RUN git clone https://github.com/dealenx/HPCCloud.git /hpccloud && \
   cd /hpccloud && \
   git checkout master
 
