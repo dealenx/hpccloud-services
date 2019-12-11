@@ -23,7 +23,7 @@ COPY ./docker/girder/girder.local.conf /etc/girder.cfg
 
 # temp cache- buster when repo is changed.
 RUN echo 'test1' > testx && rm testx && \
-  git clone https://github.com/Kitware/HPCCloud.git /hpccloud && \
+  git clone https://github.com/dealenx/HPCCloud.git /hpccloud && \
   cd /hpccloud && \
   git checkout master
 
