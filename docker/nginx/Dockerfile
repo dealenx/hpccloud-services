@@ -1,7 +1,7 @@
 FROM node:10 AS build
 
 RUN echo 'test1' > testx && rm testx && \
-  git clone https://github.com/Kitware/HPCCloud.git /hpccloud && \
+  git clone https://github.com/dealenx/HPCCloud.git /hpccloud && \
   cd /hpccloud && \
   git checkout master && \
   npm install && \
